@@ -1,0 +1,121 @@
+<!DOCTYPE html><!--  Last Published: Tue Mar 09 2021 14:17:38 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="6034fe286a10675d4e9ac6f5" data-wf-site="6024425fe4650f16992543c8">
+<head>
+  <meta charset="utf-8">
+  <title>Log Into Vinify - Your Virtual Sommelier</title>
+  <meta content="Log Into Vinify - Your Virtual Sommelier" property="og:title">
+  <meta content="Log Into Vinify - Your Virtual Sommelier" property="twitter:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/components.css" rel="stylesheet" type="text/css">
+  <link href="css/vinify-0-3.css" rel="stylesheet" type="text/css">
+
+
+
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+  <style>
+    ::-moz-selection { /* Firefox */
+        color: #ffffff;
+        background: #36264B;
+    }
+    ::selection {
+        color: #ffffff;
+        background: #36264B;
+    }
+</style>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" async=""></script>
+</head>
+<body>
+  <div data-w-id="Div Block 4" class="login-panel">
+    <div class="container">
+      <div class="login-wrapper">
+        <div class="content-block login-content-block">
+          <div class="login-box">
+            <h1 class="h1-login">Log into Vinify</h1>
+            <div data-duration-in="300" data-duration-out="100" class="w-tabs">
+              <div class="tabs-menu w-tab-menu">
+                <a data-w-tab="Login" class="login-tab-link w-inline-block w-tab-link">
+                  <div>Login</div>
+                </a>
+                <a data-w-tab="Sign Up" id="signUp" class="login-tab-link w-inline-block w-tab-link w--current">
+                  <div>Sign Up</div>
+                </a>
+                <a data-w-tab="Forgotten" id="forgottenPass" class="login-tab-link hidden-tab w-inline-block w-tab-link">
+                  <div>Forgotten</div>
+                </a>
+              </div>
+              <div class="w-tab-content">
+                <div data-w-tab="Login" class="w-tab-pane">
+                  <div class="w-form login-content">
+                    <form id="email-form" name="email-form" data-name="Email Form" redirect="/" data-redirect="https://vinify-0-3.webflow.io/" class="login-form form-"><label for="Email-Address-2" class="hide-label">Email</label><input type="text" class="login-feild w-input" maxlength="256" name="Email-Address" data-name="Email Address" placeholder="Email" id="Email-Address-2"><label for="Password" class="hide-label">Password</label><input type="password" class="login-feild w-input" maxlength="256" name="Password" data-name="Password" placeholder="Password" id="Password" required="">
+                      <div class="login-button-wrapper"><input type="submit" value="Login" data-wait="Please wait..." class="login-page-button overlay-submit w-button" onclick="login()">
+                        <div class="login-page-button"></div>
+                      </div>
+                    </form>
+                    <div class="w-form-done">
+                      <div>Thank you! Your submission has been received!</div>
+                    </div>
+                    <div class="w-form-fail" style="font-size:12px">
+                      <div><label class="label-login-error">Oops! Something went wrong while submitting the form.</label></div>
+                    </div>
+                  </div>
+                </div>
+                <div data-w-tab="Sign Up" class="w-tab-pane w--tab-active">
+                  <div class="w-form">
+                    <form id="email-form" name="email-form" data-name="Email Form" redirect="/welcome" data-redirect="/welcome" class="login-form"><label for="Email" class="hide-label">Email</label><input type="text" class="login-feild w-input" maxlength="256" name="Name" data-name="Name" placeholder="Name" id="Name"><input type="email" class="login-feild w-input" maxlength="256" name="Email" data-name="Email" placeholder="Email" id="Email"><label for="Password-3" class="hide-label">Password</label><input type="text" class="login-feild w-input" maxlength="256" name="Password" data-name="Password" placeholder="Password" id="Password-3" required=""><input type="text" class="login-feild w-input" maxlength="256" name="Confirm-Password" data-name="Confirm Password" placeholder="Confirm Password" id="Confirm-Password" required="">
+                      <div class="login-button-wrapper"><input type="submit" value="Create Account" data-wait="Please wait..." class="login-page-button overlay-submit w-button">
+                        <div class="login-page-button"></div>
+                      </div>
+                    </form>
+                    <div class="w-form-done">
+                      <div>Thank you! Your submission has been received!</div>
+                    </div>
+                    <div class="w-form-fail">
+                      <div>Oops! Something went wrong while submitting the form.</div>
+                    </div>
+                  </div>
+                </div>
+                <div data-w-tab="Forgotten" class="w-tab-pane">
+                  <div class="w-form">
+                    <form id="email-form" name="email-form" data-name="Email Form" class="login-form"><label for="Email-Address" class="hide-label">Email</label><input type="text" class="login-feild w-input" maxlength="256" name="Email-Address" data-name="Email Address" placeholder="Email Address" id="Email-Address"><label for="Password-4" class="hide-label">Password</label>
+                      <div class="login-button-wrapper"><input type="submit" value="Reset Password" data-wait="Please wait..." class="login-page-button overlay-submit w-button">
+                        <div class="login-page-button"></div>
+                      </div>
+                    </form>
+                    <div class="w-form-done">
+                      <div>Thank you! Your submission has been received!</div>
+                    </div>
+                    <div class="w-form-fail">
+                      <div>Oops! Something went wrong while submitting the form.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="login-link">Forgotten Password</a>
+          </div>
+          <div data-w-id="51ce00b4-d9dc-61de-7d49-bd7c550e4a71" data-animation-type="lottie" data-src="documents/women_login.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2.769435989967998" data-duration="0" class="login-image"></div>
+        </div>
+        <a href="#" class="sign-up-link w-inline-block">
+          <div>Don&#x27;t have an account? <span class="purple-text">Sign up here</span>.</div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/vinify-0-3.js" type="text/javascript"></script>
+
+  <script src="js/vinify.js"></script>
+  <script type="text/javascript">
+    $(".login-link").click(function(e) {
+      e.preventDefault();
+      $("#forgottenPass").click();
+    })
+    $(".sign-up-link").click(function(e) {
+      e.preventDefault();
+      $("#signUp").click();
+    })
+</script>
+</body>
+</html>
